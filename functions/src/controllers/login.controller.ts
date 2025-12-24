@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
-import Form from "../core/forms/form";
+
+import Form, { MoreAction } from "../core/forms/form";
 import TextField from "../core/forms/text-field";
 
 export const loginForm = async (req: Request, res: Response) => {
@@ -19,5 +20,14 @@ export const loginForm = async (req: Request, res: Response) => {
   });
 
   form.data.push(emailField, passwordField);
+
+  const loginActions: MoreAction = {
+    name: "login_btn",
+    label: "Continue",
+    url: "/login",
+    method: "POST",
+  };
+
+  form.more_actions.push(loginActions);
   return res.status(200).json(form);
 };
