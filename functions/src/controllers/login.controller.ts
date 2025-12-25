@@ -11,12 +11,14 @@ export const loginForm = async (req: Request, res: Response) => {
     label: "Email",
     placeholder: "Enter your email",
     value: "",
+    keyboardType: "email-address",
   });
   const passwordField = new TextField({
     name: "password",
     label: "Password",
     placeholder: "Enter your password",
     value: "",
+    secret: true,
   });
 
   form.data.push(emailField, passwordField);

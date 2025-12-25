@@ -6,6 +6,7 @@ export type FieldData = {
   icon?: string;
   secret?: boolean;
   required?: boolean;
+  keyboardType?: string;
 };
 
 class FieldBase {
