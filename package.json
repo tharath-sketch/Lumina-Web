@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "emulator": "firebase emulators:start"
+    "emulator": "firebase emulators:start --import=./emulator_data --export-on-exit"
   },
   "dependencies": {
     "react": "^19.2.0",
