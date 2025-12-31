@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 import Form, { MoreAction } from "../core/forms/form";
-import TextField from "../core/forms/text-field";
+import TextField from "../core/forms/input.field";
 
 export const loginForm = async (req: Request, res: Response) => {
   const form = new Form("LoginForm");

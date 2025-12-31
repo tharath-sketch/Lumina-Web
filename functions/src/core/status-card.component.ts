@@ -1,4 +1,4 @@
-import Component from "./component.base";
+import Component from "./base.component";
 
 export type StatusCardType = {
   color: string;

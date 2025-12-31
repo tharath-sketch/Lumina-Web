@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import StatusCard from "../core/statusCard";
+import StatusCard from "../core/status-card.component";
 
 export const getDashboard = (req: Request, res: Response) => {
   const statCards = new StatusCard("StatusCard", [

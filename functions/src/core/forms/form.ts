@@ -1,5 +1,5 @@
 import { Method } from "axios";
-import FieldBase from "./field.base";
+import FieldBase from "./base.field";
 
 export type MoreAction = {
   name: string;
