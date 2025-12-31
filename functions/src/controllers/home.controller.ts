@@ -1,8 +1,9 @@
 import { Request, Response } from "express";
+
 import StatusCard from "../core/statusCard";
 
 export const getDashboard = (req: Request, res: Response) => {
-  const statCards = new StatusCard([
+  const statCards = new StatusCard("StatusCard", [
     {
       label: "GPA",
       value: "3.85",

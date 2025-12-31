@@ -7,8 +7,8 @@ export type StatusCardType = {
 };
 
 class StatusCard extends Component<StatusCardType> {
-  constructor(data: Array<StatusCardType> = []) {
-    super("StatusCard", data);
+  constructor(title: string, data: Array<StatusCardType> = []) {
+    super("StatusCard", title, data);
   }
 }
 
