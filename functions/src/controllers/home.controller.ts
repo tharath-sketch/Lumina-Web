@@ -57,5 +57,9 @@ export const getDashboard = (req: Request, res: Response) => {
     },
   ]);
 
+  scheduleCards.more_actions.push({
+    label: "VIEW ALL",
+  });
+
   return res.status(200).json([statCards, scheduleCards]);
 };
