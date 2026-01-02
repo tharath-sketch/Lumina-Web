@@ -1,4 +1,4 @@
-class Component<Data> {
+class ComponentBase<Data> {
   name: string;
   title: string;
   data: Array<Data> = [];
@@ -10,4 +10,4 @@ class Component<Data> {
   }
 }
 
-export default Component;
+export default ComponentBase;

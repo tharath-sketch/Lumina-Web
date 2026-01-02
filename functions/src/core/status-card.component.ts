@@ -1,4 +1,4 @@
-import Component from "./base.component";
+import ComponentBase from "./base.component";
 
 export type StatusCardType = {
   color: string;
@@ -6,7 +6,7 @@ export type StatusCardType = {
   value: string;
 };
 
-class StatusCard extends Component<StatusCardType> {
+class StatusCard extends ComponentBase<StatusCardType> {
   constructor(title: string, data: Array<StatusCardType> = []) {
     super("StatusCard", title, data);
   }

@@ -1,4 +1,4 @@
-class BaseError extends Error {
+class ErrorBase extends Error {
   code: number;
   title: string;
   description: string;
@@ -19,4 +19,4 @@ class BaseError extends Error {
   };
 }
 
-export default BaseError;
+export default ErrorBase;

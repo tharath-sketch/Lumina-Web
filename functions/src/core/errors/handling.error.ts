@@ -1,6 +1,6 @@
 import { Response } from "express";
-import BaseError from "./base.error";
+import ErrorBase from "./base.error";
 
-export const errorHandling = (res: Response, error: BaseError) => {
+export const errorHandling = (res: Response, error: ErrorBase) => {
   res.status(error.code).json(error);
 };

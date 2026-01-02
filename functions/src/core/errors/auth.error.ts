@@ -1,6 +1,6 @@
-import BaseError from "./base.error";
+import ErrorBase from "./base.error";
 
-class AuthenticationError extends BaseError {
+class AuthenticationError extends ErrorBase {
   constructor(title: string = "Error 401", description: string) {
     super(401, title, description);
   }
